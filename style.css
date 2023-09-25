@@ -1,1 +1,143 @@
 /* write your code here */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.layar-dalam {
+    width: 1000px;
+    margin : auto;
+}
+.layar-penuh {
+    width: 100%;
+}
+nav {
+    z-index: 100;
+    color: #f8dfdf;
+    background-color: rgb(232, 235, 235);
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+nav .menu {
+    float : right;
+    height: 60px;
+    max-width: 600px;
+
+}
+
+nav .menu ul{
+    list-style-type: none;
+    margin : 0;
+    padding :0;
+    display: flex;
+}
+nav .menu ul li {
+    list-style-type: none;
+    float : left;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a :hover {
+    text-decoration: underline;
+}
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+header video {
+    position: absolute;
+    top :0;
+    left : 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+header .intro {
+     z-index: 100;
+    color :#fff;
+    text-align: center ;
+    position: relative;
+    top : 50%;
+}
+header .intro h3 {
+    font-size : 50px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#aboutus  {
+    text-align: center;
+}
+
+
+section#gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+section#gallery div {
+    padding: 10px;
+}
+
+section#gallery div img {
+    height: 100px;
+    border-radius: 5px;
+}
+
+section#gallery div img:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+footer {
+    padding: 50px 0px 50px 0px;
+    background-color: #343a40;
+    color: #fff;
+}
+footer .layar-dalam{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .layar-dalam div {
+    width: 20%;
+
+}
+footer .layar-dalam h5 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer .layar-dalam .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #6666;
+    text-align: center;
+}
